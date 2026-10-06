@@ -1,0 +1,996 @@
+/* ---------- Programs Hero ---------- */
+.programs-hero {
+    padding-top: var(--header-h); /* clears the fixed header */
+    background: var(--secondary-dark);
+}
+
+.programs-hero .prh-main {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    padding: 60px var(--pad-x);
+    background:
+        linear-gradient(90deg, rgba(30, 25, 66, 0.95) 0%, rgba(45, 38, 92, 0.75) 55%, rgba(45, 38, 92, 0.45) 100%),
+        url('images/schools/programs-hero.jpg') no-repeat center / cover;
+    border-bottom: 4px solid var(--accent);
+}
+
+.programs-hero .prh-content {
+    max-width: 680px;
+    color: var(--white);
+}
+
+.programs-hero .prh-breadcrumb {
+    font-size: 1rem;
+    color: var(--light-gray);
+    margin-bottom: 1.5rem;
+}
+
+.programs-hero .prh-breadcrumb a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: .3s;
+}
+
+.programs-hero .prh-breadcrumb a:hover {
+    color: var(--accent-light);
+}
+
+.programs-hero .prh-eyebrow {
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 1rem;
+}
+
+.programs-hero h1 {
+    font-size: clamp(2.8rem, 6vw, 5rem);
+    font-weight: 700;
+    line-height: 1.05;
+    text-transform: uppercase;
+}
+
+.programs-hero h1 span {
+    color: var(--accent);
+}
+
+.programs-hero .prh-divider {
+    width: 100px;
+    height: 4px;
+    margin: 1.5rem 0;
+    background: var(--accent);
+    border-radius: 2px;
+}
+
+.programs-hero .prh-text {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    max-width: 520px;
+}
+
+/* Quick-link strip */
+.programs-hero .prh-links {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background: var(--secondary-dark);
+}
+
+.programs-hero .prh-links li {
+    border-left: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.programs-hero .prh-links li:first-child {
+    border-left: none;
+}
+
+.programs-hero .prh-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: 1.4;
+    color: var(--white);
+    text-decoration: none;
+    transition: .3s;
+}
+
+.programs-hero .prh-links a:hover {
+    background: var(--secondary);
+    color: var(--accent);
+}
+
+.programs-hero .prh-links a:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: -4px;
+}
+
+.programs-hero .prh-links svg {
+    width: 38px;
+    height: 38px;
+    flex-shrink: 0;
+    fill: none;
+    stroke: var(--accent);
+    stroke-width: 2.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+@media (max-width: 900px) {
+    .programs-hero .prh-main {
+        min-height: auto;
+        padding: 3.5rem 5%;
+    }
+
+    .programs-hero .prh-links {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .programs-hero .prh-links li:nth-child(3) {
+        border-left: none;
+    }
+
+    .programs-hero .prh-links li:nth-child(n+3) {
+        border-top: 1px solid rgba(255, 255, 255, 0.12);
+    }
+}
+
+@media (max-width: 500px) {
+    .programs-hero .prh-links {
+        grid-template-columns: 1fr;
+    }
+
+    .programs-hero .prh-links li {
+        border-left: none;
+    }
+
+    .programs-hero .prh-links li + li {
+        border-top: 1px solid rgba(255, 255, 255, 0.12);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .programs-hero .prh-breadcrumb a,
+    .programs-hero .prh-links a { transition: none; }
+}
+
+
+/* ---------- Academic Overview ----------
+   Split layout (same as the Branches page): text on one half, photo on the
+   other half bleeding to the screen edge. */
+.academic-overview {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 80px 0;
+    background: var(--off-white);
+}
+
+.academic-overview .ao-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 4rem 0 max(10%, calc((100vw - 1400px) / 2));
+}
+
+.academic-overview .ao-eyebrow {
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+}
+
+.academic-overview .ao-eyebrow span {
+    color: var(--accent);
+}
+
+.academic-overview h2 {
+    font-size: clamp(2.6rem, 5vw, 4.4rem);
+    font-weight: 700;
+    line-height: 1.1;
+    text-transform: uppercase;
+    color: var(--secondary);
+    margin-bottom: 1.5rem;
+}
+
+.academic-overview h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    margin-top: 1.25rem;
+    background: var(--accent);
+    border-radius: 2px;
+}
+
+.academic-overview .ao-text {
+    font-size: 1.25rem;
+    line-height: 1.7;
+    color: var(--text-muted);
+    max-width: 520px;
+}
+
+.academic-overview .ao-img img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    background: var(--light-gray);
+}
+
+@media (max-width: 800px) {
+    .academic-overview {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 0 0 3rem;
+    }
+
+    .academic-overview .ao-img { order: -1; }
+
+    .academic-overview .ao-content { padding: 0 5%; }
+}
+
+/* ---------- SHS Programs: poster cards ---------- */
+.shs-programs {
+    padding: 80px var(--pad-x);
+    background: var(--white);
+}
+
+.shs-programs .shs-head {
+    margin-bottom: 3rem;
+}
+
+.shs-programs .shs-head h2 {
+    font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--secondary);
+}
+
+.shs-programs .shs-head h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    margin: 0.6rem 0 1rem;
+    background: var(--accent);
+    border-radius: 2px;
+}
+
+.shs-programs .shs-head p {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+}
+
+.shs-programs .shs-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    align-items: stretch; 
+}
+
+.shs-programs .shs-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    aspect-ratio: 2 / 3;
+    padding: 1.75rem 1.5rem;
+    border-radius: 18px;
+    overflow: hidden;
+    color: var(--white);
+    background: var(--secondary);
+    box-shadow: 0 10px 30px rgba(45, 38, 92, 0.2);
+}
+
+
+.shs-programs .shs-img {
+    position: absolute;
+    inset: 0;
+}
+
+.shs-programs .shs-card img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    aspect-ratio: auto;
+    object-fit: cover;
+    border-radius: 0;
+    background: var(--secondary);
+    transition: transform .8s ease;
+}
+
+.shs-programs .shs-card:hover img {
+    transform: scale(1.06);
+}
+
+/* dark scrim behind the title and button so they stay readable on any photo */
+.shs-programs .shs-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: linear-gradient(
+        to top,
+        rgba(15, 12, 40, 0.94) 0%,
+        rgba(15, 12, 40, 0.82) 24%,
+        rgba(15, 12, 40, 0.45) 42%,
+        rgba(15, 12, 40, 0) 64%
+    );
+}
+
+.shs-programs .shs-pill {
+    position: absolute;
+    top: 1.25rem;
+    left: 1.25rem;
+    z-index: 1;
+    padding: 0.4rem 0.9rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--secondary);
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 999px;
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+}
+
+.shs-programs .shs-card h3,
+.shs-programs .shs-card p,
+.shs-programs .shs-link {
+    position: relative;
+    z-index: 1;
+}
+
+.shs-programs .shs-card h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.15;
+    color: var(--white);
+    margin-bottom: 1.25rem;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.55);
+}
+
+.shs-programs .shs-card h3::after {
+    content: "";
+    display: block;
+    width: 44px;
+    height: 3px;
+    margin-top: 0.75rem;
+    background: var(--accent);
+    border-radius: 2px;
+}
+
+.shs-programs .shs-link {
+    align-self: flex-start;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.65rem 1.3rem;
+    border-radius: 999px;
+    background: var(--accent);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--secondary-dark);
+    text-decoration: none;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+    transition: .3s;
+}
+
+.shs-programs .shs-link span {
+    transition: transform .3s;
+}
+
+.shs-programs .shs-link:hover {
+    background: var(--accent-light);
+    color: var(--secondary-dark);
+}
+
+.shs-programs .shs-link:hover span {
+    transform: translateX(6px);
+}
+
+.shs-programs .shs-link:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 4px;
+}
+
+@media (max-width: 1000px) {
+    .shs-programs .shs-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .shs-programs .shs-card { aspect-ratio: 3 / 4; }
+}
+
+@media (max-width: 600px) {
+    .shs-programs {
+        padding: 3.5rem 5%;
+    }
+
+    .shs-programs .shs-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .shs-programs .shs-card { aspect-ratio: 4 / 5; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .shs-programs .shs-card img,
+    .shs-programs .shs-link,
+    .shs-programs .shs-link span { transition: none; }
+}
+
+.shs-programs .shs-grid {
+    align-items: stretch;
+}
+
+.shs-programs .shs-card:nth-child(even) {
+    margin-top: 0;
+}
+
+
+
+/* ---------- College Programs: same poster cards, gradient background ---------- */
+.shs-programs.college-programs {
+    background: linear-gradient(135deg, var(--secondary-dark), var(--secondary));
+}
+
+.shs-programs.college-programs .shs-head h2 {
+    color: var(--white);
+}
+
+.shs-programs.college-programs .shs-head p {
+    color: var(--light-gray);
+}
+
+/* cards share the background color, so lift them a bit */
+.shs-programs.college-programs .shs-card {
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+/* ---------- School Uniform: navy showcase with zoom ---------- */
+.uniform-section {
+    padding: 90px var(--pad-x);
+    background: linear-gradient(180deg, var(--secondary), var(--secondary-dark));
+    border-top: 4px solid var(--accent);   /* separates it from the navy College section above */
+}
+
+.uniform-header {
+    max-width: 700px;
+    margin: 0 auto 3.5rem;
+    text-align: center;
+}
+
+.uniform-label {
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--accent);
+}
+
+.uniform-header h2 {
+    margin: 0.75rem 0 0;
+    font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.uniform-header h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    margin: 0.75rem auto 1rem;
+    background: var(--accent);
+    border-radius: 2px;
+}
+
+.uniform-header p {
+    margin: 0;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    color: var(--light-gray);
+}
+
+.uniform-grid {
+    max-width: 920px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.5rem;
+}
+
+.uniform-card { scroll-margin-top: calc(var(--header-h) + 1rem); }
+
+.uniform-title {
+    margin-bottom: 1.25rem;
+    text-align: center;
+}
+
+.uniform-title p {
+    margin: 0 0 0.35rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--accent);
+}
+
+.uniform-title h3 {
+    margin: 0;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--white);
+}
+
+/* framed poster */
+.uniform-image {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 14px;
+    background: var(--secondary-dark);
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.45);
+    cursor: zoom-in;
+    transition: transform .4s ease, box-shadow .4s ease;
+}
+
+.uniform-image:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.55);
+}
+
+.uniform-image:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 4px;
+}
+
+.uniform-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.uniform-zoom {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    padding: 0.45rem 1rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--secondary-dark);
+    background: var(--accent);
+    border-radius: 999px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+    transition: background .3s;
+}
+
+.uniform-image:hover .uniform-zoom { background: var(--accent-light); }
+
+/* full-size viewer (CSS only, uses :target) */
+html:has(.uniform-lightbox:target) { overflow: hidden; }
+
+.uniform-lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    place-items: center;
+    padding: 1rem;
+    background: rgba(15, 12, 35, 0.88);
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+}
+
+.uniform-lightbox:target { display: grid; }
+
+.uniform-lightbox .ul-backdrop {
+    position: absolute;
+    inset: 0;
+    cursor: zoom-out;
+}
+
+.uniform-lightbox figure {
+    position: relative;
+    margin: 0;
+    max-width: 92vw;
+    overflow: hidden;
+    border-radius: 14px;
+    background: var(--secondary-dark);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.55);
+}
+
+.uniform-lightbox figure img {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: calc(100vh - 8rem);
+    margin: 0 auto;
+}
+
+.uniform-lightbox figcaption {
+    padding: 0.9rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--white);
+}
+
+.uniform-lightbox figcaption::after {
+    content: "";
+    display: block;
+    width: 44px;
+    height: 3px;
+    margin: 0.5rem auto 0;
+    background: var(--accent);
+    border-radius: 2px;
+}
+
+.uniform-lightbox .ul-btn {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    font-size: 1.9rem;
+    line-height: 1;
+    text-decoration: none;
+    color: var(--secondary-dark);
+    background: var(--accent);
+    transition: background .3s;
+}
+
+.uniform-lightbox .ul-btn:hover { background: var(--accent-light); }
+
+.uniform-lightbox .ul-btn:focus-visible {
+    outline: 3px solid var(--white);
+    outline-offset: 2px;
+}
+
+.uniform-lightbox .ul-close { top: 1.5rem; right: 1.5rem; }
+.uniform-lightbox .ul-prev,
+.uniform-lightbox .ul-next  { top: 50%; transform: translateY(-50%); }
+.uniform-lightbox .ul-prev  { left: 1.5rem; }
+.uniform-lightbox .ul-next  { right: 1.5rem; }
+
+@media (max-width: 700px) {
+    .uniform-section { padding: 3.5rem 5%; }
+
+    .uniform-header { margin-bottom: 2.5rem; }
+
+    .uniform-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        max-width: 420px;
+    }
+
+    .uniform-lightbox .ul-prev,
+    .uniform-lightbox .ul-next { top: auto; bottom: 1.5rem; transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .uniform-image,
+    .uniform-zoom,
+    .uniform-lightbox .ul-btn { transition: none; }
+    .uniform-image:hover { transform: none; }
+}
+
+
+/* ---------- Requirements: SHS + College in one row ---------- */
+.requirements {
+    padding: 80px var(--pad-x);
+    background: var(--white);
+}
+
+.requirements .req-cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.requirements h2 {
+    font-size: clamp(1.1rem, 2vw, 1.6rem);
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--secondary);
+    margin-bottom: 2rem;
+}
+
+.requirements h2 span {
+    color: var(--accent);
+}
+
+.requirements .req-card {
+    padding: 2rem;
+    border-radius: 18px;
+    background: var(--off-white);
+    box-shadow: 0 6px 20px rgba(45, 38, 92, 0.15);
+}
+
+.requirements .req-card h3 {
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.25rem;
+    border-bottom: 3px solid var(--accent);
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--secondary);
+}
+
+.requirements .req-card ul {
+    list-style: none;
+    display: grid;
+    gap: 1rem;
+}
+
+.requirements .req-card li {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    font-size: 1.1rem;
+    color: var(--text-muted);
+}
+
+/* check mark inside a small accent badge */
+.requirements .req-card li::before {
+    content: "";
+    width: 1.6rem;
+    height: 1.6rem;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background-color: var(--accent);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231e1942' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 12.5l4 4 8-9'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+}
+
+@media (max-width: 700px) {
+    .requirements {
+        padding: 3.5rem 5%;
+    }
+
+    .requirements .req-cols {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .requirements .req-card {
+        padding: 1.5rem;
+    }
+}
+
+
+/* =====================================================
+   Program detail modals (CSS only, uses :target)
+   ===================================================== */
+
+/* the whole card opens its modal through the "Learn More" link */
+.shs-programs .shs-card { scroll-margin-top: calc(var(--header-h) + 1rem); }
+
+.shs-programs .shs-link { position: static; }
+
+.shs-programs .shs-link::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    border-radius: 18px;
+}
+
+.shs-programs .shs-link:focus-visible { outline: none; }
+
+.shs-programs .shs-link:focus-visible::after {
+    outline: 3px solid var(--accent);
+    outline-offset: -6px;
+}
+
+.shs-programs .shs-card { cursor: pointer; }
+
+/* stop the page scrolling behind an open modal */
+html:has(.prog-modal:target) { overflow: hidden; }
+
+.prog-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    place-items: center;
+    padding: 1rem;
+    background: rgba(15, 12, 35, 0.8);
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+}
+
+.prog-modal:target { display: grid; }
+
+.prog-modal .pm-backdrop {
+    position: absolute;
+    inset: 0;
+    cursor: zoom-out;
+}
+
+.prog-modal .pm-panel {
+    position: relative;
+    display: flex;
+    width: min(94vw, 1100px);
+    max-height: min(90vh, 780px);
+    overflow: hidden;
+    background: var(--white);
+    border-top: 4px solid var(--accent);
+    border-radius: 6px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.prog-modal .pm-img {
+    position: relative;
+    flex: 0 0 47%;
+    background: var(--secondary);
+}
+
+.prog-modal .pm-img img {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.prog-modal .pm-body {
+    flex: 1 1 auto;
+    min-width: 0;
+    min-height: 0;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding: 3rem 2.5rem 2.5rem;
+}
+
+.prog-modal .pm-eyebrow {
+    margin: 0 0 0.75rem;
+    padding-right: 3.5rem;
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--accent);
+}
+
+.prog-modal .pm-title {
+    margin: 0 0 1.5rem;
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+    font-weight: 700;
+    line-height: 1.15;
+    color: var(--secondary);
+}
+
+.prog-modal .pm-title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    margin-top: 1rem;
+    background: var(--accent);
+    border-radius: 2px;
+}
+
+.prog-modal .pm-desc {
+    margin: 0 0 2rem;
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: var(--text-muted);
+}
+
+.prog-modal .pm-list { margin-bottom: 1.75rem; }
+
+.prog-modal .pm-list h4 {
+    margin: 0 0 0.9rem;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--secondary);
+}
+
+.prog-modal .pm-list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.6rem;
+}
+
+.prog-modal .pm-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    font-size: 1.1rem;
+    color: var(--text-muted);
+}
+
+.prog-modal .pm-list li::before {
+    content: "";
+    width: 0.6rem;
+    height: 0.6rem;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: var(--accent);
+}
+
+.prog-modal .pm-close {
+    position: absolute;
+    top: 1rem;
+    right: 1.25rem;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 2rem;
+    line-height: 1;
+    text-decoration: none;
+    color: var(--white);
+    background: var(--secondary);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    transition: background .3s;
+}
+
+.prog-modal .pm-close:hover { background: var(--secondary-dark); }
+
+.prog-modal .pm-close:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 2px;
+}
+
+/* Phones and small tablets: photo on top, details scroll below */
+@media (max-width: 800px) {
+    .prog-modal .pm-panel {
+        flex-direction: column;
+        max-height: 92vh;
+    }
+
+    .prog-modal .pm-img { flex: 0 0 190px; }
+
+    .prog-modal .pm-body { padding: 1.75rem 1.5rem 2rem; }
+
+    .prog-modal .pm-desc,
+    .prog-modal .pm-list li { font-size: 1.05rem; }
+
+    .prog-modal .pm-close {
+        top: 0.75rem;
+        right: 0.75rem;
+        width: 44px;
+        height: 44px;
+        font-size: 1.7rem;
+    }
+
+    .prog-modal .pm-eyebrow { padding-right: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .prog-modal .pm-close { transition: none; }
+}

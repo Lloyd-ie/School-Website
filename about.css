@@ -1,0 +1,543 @@
+/* ---------- About Hero ---------- */
+.about-hero {
+    padding-top: var(--header-h); /* clears the fixed header */
+    background: var(--secondary-dark);
+}
+
+.about-hero .abh-main {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    padding: 60px var(--pad-x);
+    background:
+        linear-gradient(90deg, rgba(30, 25, 66, 0.95) 0%, rgba(45, 38, 92, 0.75) 55%, rgba(45, 38, 92, 0.45) 100%),
+        url('images/gotaco.png') no-repeat center / cover;
+    border-bottom: 4px solid var(--accent);
+}
+
+.about-hero .abh-content {
+    max-width: 680px;
+    color: var(--white);
+}
+
+.about-hero .abh-breadcrumb {
+    font-size: 1rem;
+    color: var(--light-gray);
+    margin-bottom: 1.5rem;
+}
+
+.about-hero .abh-breadcrumb a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: .3s;
+}
+
+.about-hero .abh-breadcrumb a:hover {
+    color: var(--accent-light);
+}
+
+.about-hero .abh-eyebrow {
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 1rem;
+}
+
+.about-hero h1 {
+    font-size: clamp(2.8rem, 6vw, 5rem);
+    font-weight: 700;
+    line-height: 1.05;
+    text-transform: uppercase;
+}
+
+.about-hero h1 span {
+    color: var(--accent);
+}
+
+.about-hero .abh-divider {
+    width: 100px;
+    height: 4px;
+    margin: 1.5rem 0;
+    background: var(--accent);
+    border-radius: 2px;
+}
+
+.about-hero .abh-text {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    max-width: 520px;
+}
+
+/* Quick-link strip */
+.about-hero .abh-links {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background: var(--secondary-dark);
+}
+
+.about-hero .abh-links li {
+    border-left: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.about-hero .abh-links li:first-child {
+    border-left: none;
+}
+
+.about-hero .abh-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: 1.4;
+    color: var(--white);
+    text-decoration: none;
+    transition: .3s;
+}
+
+.about-hero .abh-links a:hover {
+    background: var(--secondary);
+    color: var(--accent);
+}
+
+.about-hero .abh-links a:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: -4px;
+}
+
+.about-hero .abh-links svg {
+    width: 38px;
+    height: 38px;
+    flex-shrink: 0;
+    fill: none;
+    stroke: var(--accent);
+    stroke-width: 2.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+@media (max-width: 900px) {
+    .about-hero .abh-main {
+        min-height: auto;
+        padding: 3.5rem 5%;
+    }
+
+    .about-hero .abh-links {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-hero .abh-links li:nth-child(3) {
+        border-left: none;
+    }
+
+    .about-hero .abh-links li:nth-child(n+3) {
+        border-top: 1px solid rgba(255, 255, 255, 0.12);
+    }
+}
+
+@media (max-width: 500px) {
+    .about-hero .abh-links {
+        grid-template-columns: 1fr;
+    }
+
+    .about-hero .abh-links li {
+        border-left: none;
+    }
+
+    .about-hero .abh-links li + li {
+        border-top: 1px solid rgba(255, 255, 255, 0.12);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .about-hero .abh-breadcrumb a,
+    .about-hero .abh-links a { transition: none; }
+}
+
+/* Shared text block */
+.ab-num {
+    display: block;
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+}
+
+.ab-text h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--secondary);
+}
+
+.ab-text h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    margin: 0.5rem 0 1rem;
+    background: var(--primary);
+    border-radius: 2px;
+}
+
+.ab-text p {
+    font-size: 1.3rem;
+    line-height: 1.7;
+    color: var(--text-muted);
+}
+
+/* Text + image rows */
+.ab-row {
+    padding: 80px var(--pad-x);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 3rem;
+    background: var(--white);
+}
+
+.ab-row--alt {
+    background: var(--off-white);
+}
+
+.ab-img img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    background: var(--light-gray);
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(45, 38, 92, 0.18);
+}
+
+/* Vision + Core Values */
+.ab-duo {
+    padding: 80px var(--pad-x);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+    background: var(--white);
+}
+
+.ab-duo .ab-text {
+    padding-left: 3.5rem;
+    border-left: 4px solid var(--accent);
+}
+
+.ab-values {
+    list-style: none;
+    display: grid;
+    gap: 0.75rem;
+}
+
+.ab-values li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--text);
+}
+
+.ab-values li::before {
+    content: "✓";
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.6rem;
+    height: 1.6rem;
+    flex-shrink: 0;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--accent);
+    background: var(--primary);
+    border-radius: 4px;
+}
+
+
+/* ---------- Facilities ---------- */
+.facilities {
+    padding: 5rem var(--pad-x);
+    background: var(--secondary);
+}
+
+.facilities .section-title {
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+
+.facilities .section-title h2 {
+    font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.facilities .section-title h2::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 4px;
+    margin: 0.5rem auto 1rem;
+    background: var(--accent);   /* was var(--secondary): invisible on the same-colour background */
+    border-radius: 2px;
+}
+
+.facilities .section-title p {
+    font-size: 1.3rem;
+    color: var(--accent-light);
+}
+
+/* Poster cards: same treatment as Campus Life > Yearly Traditions */
+.facilities .facility-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    align-items: start;
+}
+
+/* staggered rhythm */
+.facilities .facility-card:nth-child(even) { margin-top: 2.5rem; }
+
+.facilities .facility-card {
+    position: relative;
+    display: block;
+    aspect-ratio: 3 / 4;
+    border-radius: 18px;
+    overflow: hidden;
+    background: var(--secondary-dark);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.facilities .facility-card img {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .8s ease;
+}
+
+.facilities .facility-card:hover img {
+    transform: scale(1.06);
+}
+
+.facilities .facility-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.facilities .facility-card h3 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    padding: 1.75rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.15;
+    color: var(--white);
+}
+
+.facilities .facility-card h3::after {
+    content: "";
+    display: block;
+    width: 44px;
+    height: 3px;
+    margin-top: 0.75rem;
+    background: var(--accent);
+    border-radius: 2px;
+}
+
+@media (max-width: 1000px) {
+    .facilities .facility-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .facilities {
+        padding: 3.5rem 5%;
+    }
+
+    .facilities .facility-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .facilities .facility-card:nth-child(even) { margin-top: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .facilities .facility-card img { transition: none; }
+}
+
+/* =====================================================
+   Responsive refinements
+   ===================================================== */
+
+/* Tablets: stack text + image rows and the Vision/Values pair */
+@media (max-width: 900px) {
+    .ab-row,
+    .ab-duo {
+        grid-template-columns: 1fr;
+        padding: 3.5rem 5%;
+        gap: 2rem;
+    }
+
+    .about-hero .abh-text { max-width: 100%; font-size: 1.2rem; }
+}
+
+/* Phones */
+@media (max-width: 600px) {
+    .about-hero .abh-main { padding: 2.5rem 5%; }
+    .about-hero h1 { font-size: clamp(2.2rem, 11vw, 3rem); }
+    .about-hero .abh-eyebrow { font-size: 0.8rem; letter-spacing: 1.5px; }
+    .about-hero .abh-breadcrumb { font-size: 0.9rem; margin-bottom: 1rem; }
+    .about-hero .abh-divider { width: 70px; margin: 1.1rem 0; }
+    .about-hero .abh-text { font-size: 1.05rem; }
+    .about-hero .abh-links a { justify-content: flex-start; padding: 1.1rem 1.5rem; }
+
+    .ab-row,
+    .ab-duo { padding: 2.5rem 5%; gap: 1.5rem; }
+
+    .ab-num { font-size: 1.8rem; }
+    .ab-text h2 { font-size: 1.25rem; }
+    .ab-text p,
+    .ab-values li { font-size: 1.05rem; }
+    .ab-duo .ab-text { padding-left: 1rem; }
+    .ab-duo { gap: 2rem; }
+
+    .philosophy-banner .pb-head { margin-bottom: 2rem; }
+    .philosophy-banner .pb-head p { font-size: 1.05rem; }
+
+    .facilities .section-title { margin-bottom: 2rem; }
+    .facilities .section-title p { font-size: 1.05rem; }
+    .facilities .facility-card { aspect-ratio: 4 / 3; border-radius: 14px; }
+    .facilities .facility-card h3 { padding: 1.25rem; font-size: 1.25rem; }
+}
+
+/* Tablet range: 7 philosophy columns get tight, so shrink labels a little */
+@media (min-width: 801px) and (max-width: 1100px) {
+    .philosophy-banner .pb-label { font-size: 0.7rem; letter-spacing: 0.5px; }
+    .philosophy-banner .pb-item { grid-template-rows: 150px auto 150px; }
+}
+
+/* ---------- Facility image modal (CSS only, uses :target) ---------- */
+.facilities .facility-open {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    cursor: zoom-in;
+}
+
+.facilities .facility-open:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: -6px;
+    border-radius: 18px;
+}
+
+.facility-lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    place-items: center;
+    padding: 1rem;
+    background: rgba(15, 12, 35, 0.85);
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+}
+
+.facility-lightbox:target {
+    display: grid;
+}
+
+.facility-lightbox .fl-backdrop {
+    position: absolute;
+    inset: 0;
+    cursor: zoom-out;
+}
+
+.facility-lightbox figure {
+    position: relative;
+    margin: 0;
+    width: min(92vw, 1000px);
+    overflow: hidden;
+    border-radius: 14px;
+    background: var(--secondary-dark);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.facility-lightbox figure img {
+    display: block;
+    width: 100%;
+    max-height: calc(100vh - 8rem);
+    object-fit: contain;
+    background: #000;
+}
+
+.facility-lightbox figcaption {
+    padding: 1rem 1.5rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--white);
+}
+
+.facility-lightbox figcaption::after {
+    content: "";
+    display: block;
+    width: 44px;
+    height: 3px;
+    margin: 0.5rem auto 0;
+    background: var(--accent);
+    border-radius: 2px;
+}
+
+.facility-lightbox .fl-btn {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    font-size: 1.9rem;
+    line-height: 1;
+    text-decoration: none;
+    color: var(--secondary-dark);
+    background: var(--accent);
+    transition: background .3s;
+}
+
+.facility-lightbox .fl-btn:hover { background: var(--accent-light); }
+
+.facility-lightbox .fl-btn:focus-visible {
+    outline: 3px solid var(--white);
+    outline-offset: 2px;
+}
+
+.facility-lightbox .fl-close { top: 1.5rem; right: 1.5rem; }
+.facility-lightbox .fl-prev,
+.facility-lightbox .fl-next  { top: 50%; transform: translateY(-50%); }
+.facility-lightbox .fl-prev  { left: max(1.5rem, calc(50% - 500px + 0.75rem)); }
+.facility-lightbox .fl-next  { right: max(1.5rem, calc(50% - 500px + 0.75rem)); }
+
+@media (prefers-reduced-motion: reduce) {
+    .facility-lightbox .fl-btn { transition: none; }
+}

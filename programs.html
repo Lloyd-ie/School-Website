@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap" rel="stylesheet"> 
+<title>DCSA | Programs</title>
+<link rel="stylesheet" href="styles.css">    
+<link rel="stylesheet" href="programs.css">    
+</head>
+<body>
+<header class="header">
+    <a href="index.html" class="logo">
+        <span class="logo-img"><img src="images/schools/datamexlogo.jpg" alt=""></span>
+        <span class="logo-text">DATAMEX COLLEGE OF SAINT ADELINE</span>
+    </a>
+
+    <input type="checkbox" id="nav-check" class="nav-check" aria-label="Toggle navigation menu">
+    <label for="nav-check" class="nav-toggle" aria-hidden="true"><span class="bar"></span></label>
+    <label for="nav-check" class="nav-backdrop" aria-hidden="true"></label>
+
+    <nav class="navbar" aria-label="Main navigation">
+        <a href="index.html" >Home</a>
+        <a href="about.html">About Us</a>
+        <a href="programs.html" aria-current="page">Programs</a>
+        <a href="branches.html">Branches</a>
+        <a href="events.html">Campus Life</a>
+    </nav>
+</header>
+<!--Hero-->
+<section class="programs-hero" id="programs-top">
+    <div class="prh-main">
+        <div class="prh-content">
+            <p class="prh-eyebrow">Senior High School · College</p>
+            <h1>Our <span>Programs</span></h1>
+            <div class="prh-divider"></div>
+            <p class="prh-text">
+                Programs designed to build knowledge, skills, and values
+                for higher education and future careers.
+            </p>
+        </div>
+    </div>
+
+    <ul class="prh-links">
+        <li>
+            <a href="#shs">
+                <svg viewBox="0 0 48 48" aria-hidden="true">
+                    <path d="M24 10 4 19l20 9 20-9-20-9Z"/>
+                    <path d="M12 24v9c0 3 5 6 12 6s12-3 12-6v-9"/>
+                    <path d="M44 19v12"/>
+                </svg>
+                <span>Senior High<br>School</span>
+            </a>
+        </li>
+        <li>
+            <a href="#college">
+                <svg viewBox="0 0 48 48" aria-hidden="true">
+                    <path d="M6 10h14c3 0 4 2 4 4v26c0-2-1-4-4-4H6V10Z"/>
+                    <path d="M42 10H28c-3 0-4 2-4 4v26c0-2 1-4 4-4h14V10Z"/>
+                </svg>
+                <span>College<br>Programs</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="#uniform">
+                <svg viewBox="0 0 48 48" aria-hidden="true">
+                    <circle cx="24" cy="24" r="18"/>
+                    <path d="M24 22v12"/>
+                    <circle cx="24" cy="15" r="1.5"/>
+                </svg>
+                <span>Uniform<br>Guideline</span>
+            </a>
+        </li>        
+        <li>
+            <a href="#shs-requirements">
+                <svg viewBox="0 0 48 48" aria-hidden="true">
+                    <path d="M12 4h24v40H12V4Z"/>
+                    <path d="M18 16l3 3 6-6M18 28l3 3 6-6"/>
+                    <path d="M30 18h2M30 30h2"/>
+                </svg>
+                <span>Admission<br>Requirements</span>
+            </a>
+        </li>
+    </ul>
+</section>        
+<!-- For Programs-->        
+<section class="academic-overview" id="academics">
+    <div class="ao-content">
+        <p class="ao-eyebrow"><span>01</span> / Academics</p>
+        <h2>Academic<br>Overview</h2>
+        <p class="ao-text">
+            The school offers different tracks and courses that help students 
+            prepare for their future careers. Each program teaches useful knowledge and 
+            skills that students can use in their chosen field. Explore the programs and 
+            find the track and course that is right for you.
+        </p>
+    </div>
+
+    <div class="ao-img">
+        <img src="images/schools/trad-animation.jpg" alt="Students learning in a classroom">
+    </div>
+</section>        
+
+<!--For SHS-->
+<section class="shs-programs" id="shs">
+    <div class="shs-head">
+        <h2>Senior High School Programs</h2>
+        <p>
+The institution offers different senior high school tracks that follow government standards and help
+ students prepare for their future studies and careers. Explore the available tracks to find the one
+  that best matches your goals.</p>
+    </div>
+
+    <div class="shs-grid">
+        <article class="shs-card" id="card-stem">
+            <div class="shs-img"><img src="images/schools/shs-stem.jpg" alt="STEM students working together"></div>
+            <span class="shs-pill">SHS strand</span>
+            <h3>STEM</h3>
+            <a href="#prog-stem" class="shs-link" aria-label="Learn more about STEM: Science, Technology, Engineering and Mathematics">Learn More <span>→</span></a>
+        </article>
+
+        <article class="shs-card" id="card-abm">
+            <div class="shs-img"><img src="images/schools/shs-abm.png" alt="ABM students studying"></div>
+            <span class="shs-pill">SHS strand</span>
+            <h3>ABM</h3>
+            <a href="#prog-abm" class="shs-link" aria-label="Learn more about ABM: Accountancy, Business and Management">Learn More <span>→</span></a>
+        </article>
+
+        <article class="shs-card" id="card-humss">
+            <div class="shs-img"><img src="images/schools/shs-humms.jpg" alt="HUMSS students in class"></div>
+            <span class="shs-pill">SHS strand</span>
+            <h3>HUMSS</h3>
+            <a href="#prog-humss" class="shs-link" aria-label="Learn more about HUMSS: Humanities and Social Sciences">Learn More <span>→</span></a>
+        </article>
+
+        <article class="shs-card" id="card-ict">
+            <div class="shs-img"><img src="images/schools/ict.jpg" alt="ICT students collaborating"></div>
+            <span class="shs-pill">SHS strand</span>
+            <h3>ICT</h3>
+            <a href="#prog-ict" class="shs-link" aria-label="Learn more about ICT: Information and Communications Technology">Learn More <span>→</span></a>
+        </article>        
+    </div>
+</section>
+
+<!--For College-->
+<section class="shs-programs college-programs" id="college">
+    <div class="shs-head">
+        <h2>College Programs</h2>
+        <p>
+            Take the next step with our college programs, built to give you practical skills
+            and the knowledge you need for your chosen career.
+        </p>
+    </div>
+
+    <div class="shs-grid">
+        <article class="shs-card" id="card-bsit">
+            <div class="shs-img"><img src="images/schools/bsit.jpg" alt="BSIT students working on computers"></div>
+            <span class="shs-pill">Bachelor's degree</span>
+            <h3>BSIT</h3>
+            <a href="#prog-bsit" class="shs-link" aria-label="Learn more about BSIT: Bachelor of Science in Information Technology">Learn More <span>→</span></a>
+        </article>
+
+        <article class="shs-card" id="card-bshm">
+            <div class="shs-img"><img src="images/schools/for-hm.png" alt="BSHM students in a hospitality setting"></div>
+            <span class="shs-pill">Bachelor's degree</span>
+            <h3>BSHM</h3>
+            <a href="#prog-bshm" class="shs-link" aria-label="Learn more about BSHM: Bachelor of Science in Hospitality Management">Learn More <span>→</span></a>
+        </article>
+
+        <article class="shs-card" id="card-bsoa">
+            <div class="shs-img"><img src="images/schools/bsoa.jpg" alt="BSOA students in an office setting"></div>
+            <span class="shs-pill">Bachelor's degree</span>
+            <h3>BSOA</h3>
+            <a href="#prog-bsoa" class="shs-link" aria-label="Learn more about BSOA: Bachelor of Science in Office Administration">Learn More <span>→</span></a>
+        </article>
+
+        <article class="shs-card" id="card-act">
+            <div class="shs-img"><img src="images/schools/cl-animation.jpg" alt="ACT students learning together"></div>
+            <span class="shs-pill">Associate course</span>
+            <h3>ACT</h3>
+            <a href="#prog-act" class="shs-link" aria-label="Learn more about ACT: Associate in Computer Technology">Learn More <span>→</span></a>
+        </article>
+    </div>
+</section>
+
+<!--For Uniform-->
+<section class="uniform-section" id="uniform">
+
+    <div class="uniform-header">
+        <span class="uniform-label">Student Guidelines</span>
+        <h2>School Uniform</h2>
+        <p>
+            Proper school uniform guidelines for Senior High School
+            and College students.
+        </p>
+    </div>
+
+    <div class="uniform-grid">
+
+        <article class="uniform-card" id="uniform-shs">
+            <div class="uniform-title">
+                <p>Proper Uniform</p>
+                <h3>Senior High School</h3>
+            </div>
+            <a class="uniform-image" href="#uniform-view-shs" aria-label="View larger poster: Senior High School proper uniform">
+                <img src="images/schools/shsunif.jpg" alt="DCSA Senior High School proper uniform">
+                <span class="uniform-zoom" aria-hidden="true">Click to enlarge</span>
+            </a>
+        </article>
+
+        <article class="uniform-card" id="uniform-college">
+            <div class="uniform-title">
+                <p>Proper Uniform</p>
+                <h3>College</h3>
+            </div>
+            <a class="uniform-image" href="#uniform-view-college" aria-label="View larger poster: College proper uniform">
+                <img src="images/schools/collegeunif.jpg" alt="DCSA College proper uniform">
+                <span class="uniform-zoom" aria-hidden="true">Click to enlarge</span>
+            </a>
+        </article>
+
+    </div>
+
+    <div class="uniform-lightbox" id="uniform-view-shs" role="dialog" aria-label="Senior High School proper uniform">
+        <a class="ul-backdrop" href="#uniform-shs" aria-label="Close"></a>
+        <figure>
+            <img src="images/schools/shsunif.jpg" alt="DCSA Senior High School proper uniform" loading="lazy">
+            <figcaption>Senior High School · Proper Uniform</figcaption>
+        </figure>
+        <a class="ul-btn ul-close" href="#uniform-shs" aria-label="Close">&times;</a>
+        <a class="ul-btn ul-prev" href="#uniform-view-college" aria-label="Other uniform poster">&#8249;</a>
+        <a class="ul-btn ul-next" href="#uniform-view-college" aria-label="Other uniform poster">&#8250;</a>
+    </div>
+
+    <div class="uniform-lightbox" id="uniform-view-college" role="dialog" aria-label="College proper uniform">
+        <a class="ul-backdrop" href="#uniform-college" aria-label="Close"></a>
+        <figure>
+            <img src="images/schools/collegeunif.jpg" alt="DCSA College proper uniform" loading="lazy">
+            <figcaption>College · Proper Uniform</figcaption>
+        </figure>
+        <a class="ul-btn ul-close" href="#uniform-college" aria-label="Close">&times;</a>
+        <a class="ul-btn ul-prev" href="#uniform-view-shs" aria-label="Other uniform poster">&#8249;</a>
+        <a class="ul-btn ul-next" href="#uniform-view-shs" aria-label="Other uniform poster">&#8250;</a>
+    </div>
+
+</section>
+
+<!--Requirements-->
+<section class="requirements" id="requirements">
+    <div class="req-cols">
+
+        <div class="req-block" id="shs-requirements">
+            <h2><span>01</span> / Senior High School Requirements</h2>
+            <div class="req-card">
+                <h3>New Students / Incoming SHS</h3>
+                <ul>
+                    <li>Report Card</li>
+                    <li>Birth Certificate</li>
+                    <li>Good Moral Certifcate</li>
+                    <li>2x2 or Recent Photo</li>
+                    <li>Other School Documents</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="req-block" id="college-requirements">
+            <h2><span>02</span> / College Admission Requirements</h2>
+            <div class="req-card">
+                <h3>Freshmen</h3>
+                <ul>
+                    <li>Senior High School Credentials</li>
+                    <li>Report Card</li>
+                    <li>Birth Certificate</li>
+                    <li>Good Moral Certifcate</li>
+                    <li>2x2 or Recent Photo</li>
+                    <li>Other School Documents</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- Program detail modals (CSS only, :target) -->
+<div class="prog-modal" id="prog-stem" role="dialog" aria-modal="true" aria-labelledby="prog-stem-title">
+    <a class="pm-backdrop" href="#card-stem" aria-label="Close"></a>
+    <div class="pm-panel">
+        <div class="pm-img"><img src="images/schools/shs-stem.jpg" alt="STEM students working together" loading="lazy"></div>
+        <div class="pm-body">
+            <p class="pm-eyebrow">STEM · Grade 11–12</p>
+            <h3 class="pm-title" id="prog-stem-title">Science, Technology, Engineering and Mathematics</h3>
+            <p class="pm-desc">Prepares students for science, engineering, and health-related college courses.</p>
+            <div class="pm-list">
+                <h4>What you'll learn</h4>
+                <ul>
+                    <li>Advanced math and the sciences</li>
+                    <li>Research and laboratory skills</li>
+                    <li>Problem solving and critical thinking</li>
+                </ul>
+            </div>
+            <div class="pm-list">
+                <h4>Career paths</h4>
+                <ul>
+                    <li>Engineer or architect</li>
+                    <li>Scientist or researcher</li>
+                    <li>Medical and health professional</li>
+                </ul>
+            </div>
+        </div>
+        <a class="pm-close" href="#card-stem" aria-label="Close">&times;</a>
+    </div>
+</div>
+
+<div class="prog-modal" id="prog-abm" role="dialog" aria-modal="true" aria-labelledby="prog-abm-title">
+    <a class="pm-backdrop" href="#card-abm" aria-label="Close"></a>
+    <div class="pm-panel">
+        <div class="pm-img"><img src="images/schools/shs-abm.png" alt="ABM students studying" loading="lazy"></div>
+        <div class="pm-body">
+            <p class="pm-eyebrow">ABM · Grade 11–12</p>
+            <h3 class="pm-title" id="prog-abm-title">Accountancy, Business and Management</h3>
+            <p class="pm-desc">Builds a strong foundation in accounting, business, and management for students aiming for careers in commerce and entrepreneurship.</p>
+            <div class="pm-list">
+                <h4>What you'll learn</h4>
+                <ul>
+                    <li>Fundamentals of accounting and finance</li>
+                    <li>Business math and economics</li>
+                    <li>Principles of management and marketing</li>
+                </ul>
+            </div>
+            <div class="pm-list">
+                <h4>Career paths</h4>
+                <ul>
+                    <li>Accountant or auditor</li>
+                    <li>Business owner or entrepreneur</li>
+                    <li>Manager or marketing professional</li>
+                </ul>
+            </div>
+        </div>
+        <a class="pm-close" href="#card-abm" aria-label="Close">&times;</a>
+    </div>
+</div>
+
+<div class="prog-modal" id="prog-humss" role="dialog" aria-modal="true" aria-labelledby="prog-humss-title">
+    <a class="pm-backdrop" href="#card-humss" aria-label="Close"></a>
+    <div class="pm-panel">
+        <div class="pm-img"><img src="images/schools/shs-humms.jpg" alt="HUMSS students in class" loading="lazy"></div>
+        <div class="pm-body">
+            <p class="pm-eyebrow">HUMSS · Grade 11–12</p>
+            <h3 class="pm-title" id="prog-humss-title">Humanities and Social Sciences</h3>
+            <p class="pm-desc">For students who are curious about people, society, and culture. Prepares them for courses in education, law, communication, and the social sciences.</p>
+            <div class="pm-list">
+                <h4>What you'll learn</h4>
+                <ul>
+                    <li>Creative writing and communication</li>
+                    <li>Society, politics, and culture</li>
+                    <li>Community engagement and social issues</li>
+                </ul>
+            </div>
+            <div class="pm-list">
+                <h4>Career paths</h4>
+                <ul>
+                    <li>Teacher or educator</li>
+                    <li>Lawyer or public servant</li>
+                    <li>Journalist, social worker, or psychologist</li>
+                </ul>
+            </div>
+        </div>
+        <a class="pm-close" href="#card-humss" aria-label="Close">&times;</a>
+    </div>
+</div>
+
+<div class="prog-modal" id="prog-ict" role="dialog" aria-modal="true" aria-labelledby="prog-ict-title">
+    <a class="pm-backdrop" href="#card-ict" aria-label="Close"></a>
+    <div class="pm-panel">
+        <div class="pm-img"><img src="images/schools/ict.jpg" alt="ICT students collaborating" loading="lazy"></div>
+        <div class="pm-body">
+            <p class="pm-eyebrow">ICT · Grade 11–12</p>
+            <h3 class="pm-title" id="prog-ict-title">Information and Communications Technology</h3>
+            <p class="pm-desc">Gives students hands-on skills in computers, programming, and digital tools, ready for IT courses or entry-level tech work.</p>
+            <div class="pm-list">
+                <h4>What you'll learn</h4>
+                <ul>
+                    <li>Computer programming and web design</li>
+                    <li>Computer systems and networking</li>
+                    <li>Digital tools for everyday work</li>
+                </ul>
+            </div>
+            <div class="pm-list">
+                <h4>Career paths</h4>
+                <ul>
+                    <li>Software or web developer</li>
+                    <li>Network or systems technician</li>
+                    <li>IT support or digital creator</li>
+                </ul>
+            </div>
+        </div>
+        <a class="pm-close" href="#card-ict" aria-label="Close">&times;</a>
+    </div>
+</div>
+
+<div class="prog-modal" id="prog-bsit" role="dialog" aria-modal="true" aria-labelledby="prog-bsit-title">
+    <a class="pm-backdrop" href="#card-bsit" aria-label="Close"></a>
+    <div class="pm-panel">
+        <div class="pm-img"><img src="images/schools/bsit.jpg" alt="BSIT students working on computers" loading="lazy"></div>
+        <div class="pm-body">
+            <p class="pm-eyebrow">BSIT · Bachelor's degree</p>
+            <h3 class="pm-title" id="prog-bsit-title">Bachelor of Science in Information Technology</h3>
+            <p class="pm-desc">Develops skills in programming, systems, and networks to prepare graduates for careers in technology.</p>
+            <div class="pm-list">
+                <h4>What you'll learn</h4>
+                <ul>
+                    <li>Programming and software development</li>
+                    <li>Databases and web systems</li>
+                    <li>Networking and system administration</li>
+                </ul>
+            </div>
+            <div class="pm-list">
+                <h4>Career paths</h4>
+                <ul>
+                    <li>Software or web developer</li>
+                    <li>Systems or network administrator</li>
+                    <li>IT support specialist</li>
+                </ul>
+            </div>
+        </div>
+        <a class="pm-close" href="#card-bsit" aria-label="Close">&times;</a>
+    </div>
+</div>
+
+<div class="prog-modal" id="prog-bshm" role="dialog" aria-modal="true" aria-labelledby="prog-bshm-title">
+    <a class="pm-backdrop" href="#card-bshm" aria-label="Close"></a>
+    <div class="pm-panel">
+        <div class="pm-img"><img src="images/schools/for-hm.png" alt="BSHM students in a hospitality setting" loading="lazy"></div>
+        <div class="pm-body">
+            <p class="pm-eyebrow">BSHM · Bachelor's degree</p>
+            <h3 class="pm-title" id="prog-bshm-title">Bachelor of Science in Hospitality Management</h3>
+            <p class="pm-desc">Prepares students to work in hotels, restaurants, and tourism, with training in food service, operations, and customer care.</p>
+            <div class="pm-list">
+                <h4>What you'll learn</h4>
+                <ul>
+                    <li>Food and beverage preparation and service</li>
+                    <li>Hotel and restaurant operations</li>
+                    <li>Customer service and event management</li>
+                </ul>
+            </div>
+            <div class="pm-list">
+                <h4>Career paths</h4>
+                <ul>
+                    <li>Hotel or restaurant manager</li>
+                    <li>Chef or culinary professional</li>
+                    <li>Event or tourism coordinator</li>
+                </ul>
+            </div>
+        </div>
+        <a class="pm-close" href="#card-bshm" aria-label="Close">&times;</a>
+    </div>
+</div>
+
+<div class="prog-modal" id="prog-bsoa" role="dialog" aria-modal="true" aria-labelledby="prog-bsoa-title">
+    <a class="pm-backdrop" href="#card-bsoa" aria-label="Close"></a>
+    <div class="pm-panel">
+        <div class="pm-img"><img src="images/schools/bsoa.jpg" alt="BSOA students in an office setting" loading="lazy"></div>
+        <div class="pm-body">
+            <p class="pm-eyebrow">BSOA · Bachelor's degree</p>
+            <h3 class="pm-title" id="prog-bsoa-title">Bachelor of Science in Office Administration</h3>
+            <p class="pm-desc">Trains students in office management, communication, and technology for administrative and support roles.</p>
+            <div class="pm-list">
+                <h4>What you'll learn</h4>
+                <ul>
+                    <li>Records and office management</li>
+                    <li>Business communication and documentation</li>
+                    <li>Office software and digital tools</li>
+                </ul>
+            </div>
+            <div class="pm-list">
+                <h4>Career paths</h4>
+                <ul>
+                    <li>Administrative assistant</li>
+                    <li>Executive or office secretary</li>
+                    <li>Office or records manager</li>
+                </ul>
+            </div>
+        </div>
+        <a class="pm-close" href="#card-bsoa" aria-label="Close">&times;</a>
+    </div>
+</div>
+
+<div class="prog-modal" id="prog-act" role="dialog" aria-modal="true" aria-labelledby="prog-act-title">
+    <a class="pm-backdrop" href="#card-act" aria-label="Close"></a>
+    <div class="pm-panel">
+        <div class="pm-img"><img src="images/schools/cl-animation.jpg" alt="ACT students learning together" loading="lazy"></div>
+        <div class="pm-body">
+            <p class="pm-eyebrow">ACT · Associate course</p>
+            <h3 class="pm-title" id="prog-act-title">Associate in Computer Technology</h3>
+            <p class="pm-desc">A focused program that builds practical computer skills for entry-level IT work or further study.</p>
+            <div class="pm-list">
+                <h4>What you'll learn</h4>
+                <ul>
+                    <li>Computer hardware and software basics</li>
+                    <li>Programming fundamentals</li>
+                    <li>Basic networking and troubleshooting</li>
+                </ul>
+            </div>
+            <div class="pm-list">
+                <h4>Career paths</h4>
+                <ul>
+                    <li>Computer technician</li>
+                    <li>Help desk or IT support staff</li>
+                    <li>Junior programmer</li>
+                </ul>
+            </div>
+        </div>
+        <a class="pm-close" href="#card-act" aria-label="Close">&times;</a>
+    </div>
+</div>
+
+<!--Footer-->
+<footer>
+  <div class="cols">
+    <section>
+      <h3>Datamex College Of Saint Adeline Valenzuela</h3>
+      <p><b>Location:</b> 32 GOTACO BLD II MCARTHUR HIGHWAY MARULAS, Valenzuela, Philippines</p>
+      <p><b>Phone:</b> 0906 650 8874</p>
+      <p><b>Email:</b> <a href="mailto:dcsa.valenzuela.2010@gmail.com">dcsa.valenzuela.2010@gmail.com</a></p>
+      <p><b>Facebook:</b> <a href="https://www.facebook.com/datamexcollegeofstadelinevalenzuela">DCSA VALENZUELA</a></p>
+    </section>
+    <nav aria-label="Student support">
+      <h3>Student support</h3>
+      <ul>
+        <li><a href="programs.html#shs-requirements">Admissions</a></li>
+        <li><a href="events.html">Campus life</a></li>
+        <li><a href="about.html">Our story</a></li>
+        <li><a href="#">Contact admissions</a></li>
+      </ul>
+    </nav>
+    <nav aria-label="Useful links">
+      <h3>Useful links</h3>
+      <ul>
+        <li><a href="programs.html">Explore programs</a></li>
+        <li><a href="branches.html">Find a branch near you</a></li>
+        <li><a href="events.html">View events</a></li>
+        <li><a href="about.html">Learn about Datamex</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="bottom">© 2026 Datamex. All rights reserved.</div>
+</footer>
+</body>
+</html>
